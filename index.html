@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Painel Cheat com Key</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Tela de Login -->
+<div class="login" id="login">
+    <h2>Login</h2>
+    <input type="text" id="keyInput" placeholder="Digite a key">
+    <button id="loginBtn">Entrar</button>
+    <p id="loginMsg"></p>
+</div>
+
+<!-- Painel -->
+<div class="painel" id="painel" style="display:none;">
+    <h2>Vicente Auxílio</h2>
+
+    <!-- Toggles -->
+    <div class="toggle-row">
+        <span>Aumentar precisão</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-precision">
+          <span class="slider-toggle"></span>
+        </label>
+    </div>
+
+    <div class="toggle-row">
+        <span>NoRecoil</span>
+        <label class="switch">
+          <input type="checkbox" id="toggle-recoil">
+          <span class="slider-toggle"></span>
+        </label>
+    </div>
+
+    <!-- Barra de progresso -->
+    <div class="barra-container">
+        <div class="barra" id="barra"></div>
+        <input type="range" id="slider" min="0" max="100" value="50">
+    </div>
+    <p id="percent">50%</p>
+
+    <!-- Botão Injetar -->
+    <button id="injetar">Injetar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
